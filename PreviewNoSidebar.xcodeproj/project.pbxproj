@@ -6,9 +6,16 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		076C51BF1C76CD5C00AC7AA0 /* Opee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076C51BE1C76CD5C00AC7AA0 /* Opee.framework */; };
+		076C51C11C76CD7100AC7AA0 /* PreviewNoSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 076C51C01C76CD7100AC7AA0 /* PreviewNoSidebar.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		076C51B51C76CCC100AC7AA0 /* PreviewNoSidebar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreviewNoSidebar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		076C51B81C76CCC100AC7AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076C51BE1C76CD5C00AC7AA0 /* Opee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Opee.framework; path = ../../../Library/Frameworks/Opee.framework; sourceTree = "<group>"; };
+		076C51C01C76CD7100AC7AA0 /* PreviewNoSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewNoSidebar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076C51BF1C76CD5C00AC7AA0 /* Opee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -25,6 +33,7 @@
 		076C51AC1C76CCC100AC7AA0 = {
 			isa = PBXGroup;
 			children = (
+				076C51BE1C76CD5C00AC7AA0 /* Opee.framework */,
 				076C51B71C76CCC100AC7AA0 /* PreviewNoSidebar */,
 				076C51B61C76CCC100AC7AA0 /* Products */,
 			);
@@ -42,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				076C51B81C76CCC100AC7AA0 /* Info.plist */,
+				076C51C01C76CD7100AC7AA0 /* PreviewNoSidebar.m */,
 			);
 			path = PreviewNoSidebar;
 			sourceTree = "<group>";
@@ -112,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076C51C11C76CD7100AC7AA0 /* PreviewNoSidebar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +212,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = PreviewNoSidebar/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Opee/Extensions";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elanini.PreviewNoSidebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -214,8 +229,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = PreviewNoSidebar/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Opee/Extensions";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elanini.PreviewNoSidebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
